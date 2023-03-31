@@ -3,17 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "./index.js",
-  "bin": {
-    "jenschr": "node ./index.js"
-  },
   "scripts": {
-    "postinstall": "node ./index.js",
+    "postinstall": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./index.js"
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "Jensa",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",
     "debug": "^4.3.4",
