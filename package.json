@@ -2,11 +2,12 @@
   "name": "product-api",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./index.js",
+  "bin": "./index.js",
   "scripts": {
     "postinstall": "node ./index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "./node index.js"
   },
   "keywords": [],
   "author": "Jensa",
