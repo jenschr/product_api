@@ -4,7 +4,7 @@
   "description": "",
   "main": "./index.js",
   "bin": {
-    "jenschr": "npx start"
+    "run": "node index.js"
   },
   "scripts": {
     "build": "npx start",
