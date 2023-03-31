@@ -8,7 +8,7 @@ const ProductModel = require("./models/productModel");
 const mongoose = require("mongoose");
 mongoose.set("strictQuery", true);
 mongoose
-  .connect("mongodb://localhost/Products6")
+  .connect("mongodb://localhost/Products")
   .then(() => console.log("Connected to database"))
   .catch((error) => console.error("Error:", error));
 
