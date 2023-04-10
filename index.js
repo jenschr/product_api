@@ -49,7 +49,47 @@ async function checkForDataInDatabase() {
       categories: ["Herbs"],
     });
     const productInstance5 = new ProductModel({
+      name: "Bread",
+      categories: ["Processed"],
+    });
+    const productInstance6 = new ProductModel({
       name: "Broccoli",
+      categories: ["Vegetable"],
+    });
+    const productInstance7 = new ProductModel({
+      name: "Butter",
+      categories: ["Dairy"],
+    });
+    const productInstance8 = new ProductModel({
+      name: "Carrots",
+      categories: ["Vegetables"],
+    });
+    const productInstance9 = new ProductModel({
+      name: "Cereal",
+      categories: ["Processed"],
+    });
+    const productInstance10 = new ProductModel({
+      name: "Chicken",
+      categories: ["Meat"],
+    });
+    const productInstance11 = new ProductModel({
+      name: "Cheese",
+      categories: ["Dairy"],
+    });
+    const productInstance12 = new ProductModel({
+      name: "Chilli powder",
+      categories: ["Spice"],
+    });
+    const productInstance13 = new ProductModel({
+      name: "Coffee",
+      categories: ["Drink"],
+    });
+    const productInstance14 = new ProductModel({
+      name: "Coriander",
+      categories: ["Herbs"],
+    });
+    const productInstance15 = new ProductModel({
+      name: "Cucumber",
       categories: ["Vegetable"],
     });
     await productInstance1.save();
@@ -57,7 +97,17 @@ async function checkForDataInDatabase() {
     await productInstance3.save();
     await productInstance4.save();
     await productInstance5.save();
-    console.log("Added 5 products since the database was empty!");
+    await productInstance6.save();
+    await productInstance7.save();
+    await productInstance8.save();
+    await productInstance9.save();
+    await productInstance10.save();
+    await productInstance11.save();
+    await productInstance12.save();
+    await productInstance13.save();
+    await productInstance14.save();
+    await productInstance15.save();
+    console.log("Added 15 products since the database was empty!");
   } else {
     console.log("products", products.length);
   }
