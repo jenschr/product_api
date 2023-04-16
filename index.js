@@ -5,9 +5,7 @@ const products = require("./routes/products");
 const cors = require("cors");
 const ProductModel = require("./models/productModel");
 
-const HOST =
-  process.env.HOST ||
-  "mongodb+srv://jenschr:R5ZWAcZmKt3gLkrj@cluster0.lblaqzi.mongodb.net/?retryWrites=true&w=majority";
+const HOST = process.env.HOST || "mongodb://127.0.0.1/DatabaseName";
 const PORT = process.env.PORT || 3001;
 
 const mongoose = require("mongoose");
