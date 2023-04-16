@@ -6,6 +6,7 @@ const cors = require("cors");
 const ProductModel = require("./models/productModel");
 
 const HOST = process.env.HOST || "mongodb://127.0.0.1/DatabaseName";
+const PORT = process.env.PORT || 3001;
 
 const mongoose = require("mongoose");
 mongoose.set("strictQuery", true);
@@ -116,4 +117,4 @@ async function checkForDataInDatabase() {
 }
 checkForDataInDatabase();
 
-app.listen(3001);
+app.listen(PORT);
