@@ -13,6 +13,7 @@
   "author": "Jensa",
   "license": "MIT",
   "dependencies": {
+    "address": "^1.2.2",
     "cors": "^2.8.5",
     "debug": "^4.3.4",
     "express": "^4.18.2",

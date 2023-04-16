@@ -4,6 +4,10 @@ const morgan = require("morgan");
 const products = require("./routes/products");
 const cors = require("cors");
 const ProductModel = require("./models/productModel");
+const address = require("address");
+
+console.log("IPv4: ", address.ip());
+console.log("IPv6: ", address.ipv6());
 
 const HOST = process.env.HOST || "mongodb://127.0.0.1/DatabaseName";
 const PORT = process.env.PORT || 3001;
