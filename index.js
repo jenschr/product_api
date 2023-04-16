@@ -5,10 +5,12 @@ const products = require("./routes/products");
 const cors = require("cors");
 const ProductModel = require("./models/productModel");
 
+const HOST = process.env.HOST || "mongodb://127.0.0.1/DatabaseName";
+
 const mongoose = require("mongoose");
 mongoose.set("strictQuery", true);
 mongoose
-  .connect("mongodb://localhost/Products")
+  .connect(HOST)
   .then(() => console.log("Connected to database"))
   .catch((error) => console.error("Error:", error));
 
